@@ -1,4 +1,4 @@
-module github.com/zchee/go-analyzer
+module github.com/peczenyj/go-analyzer
 
 go 1.23.0
 

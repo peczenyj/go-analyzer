@@ -9,7 +9,7 @@ import (
 
 	"golang.org/x/tools/go/analysis/analysistest"
 
-	"github.com/zchee/go-analyzer/packagefact"
+	"github.com/peczenyj/go-analyzer/packagefact"
 )
 
 func TestAnalyzer(t *testing.T) {

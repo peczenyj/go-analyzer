@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com/zchee/go-analyzer/pkgerrors"
+	"github.com/peczenyj/go-analyzer/pkgerrors"
 	"golang.org/x/tools/go/analysis/singlechecker"
 )
 

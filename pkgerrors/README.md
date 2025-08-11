@@ -5,7 +5,7 @@ This analyzer rewrites the [github.com/pkg/errors](https://github.com/pkg/errors
 ### Installation
 
 ```
-go install github.com/zchee/go-analyzer/pkgerrors/cmd/pkgerrors@latest
+go install github.com/peczenyj/go-analyzer/pkgerrors/cmd/pkgerrors@latest
 ```
 
 ### Usage

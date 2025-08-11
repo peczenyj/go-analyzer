@@ -17,7 +17,7 @@ import (
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"
 
-	"github.com/zchee/go-analyzer/packagefact"
+	"github.com/peczenyj/go-analyzer/packagefact"
 )
 
 const Doc = `analyzes and rewrites the github.com/pkg/errors (that has been deprecated) to the fmt.Errorf with %%w verb provided after the go1.13.`

@@ -8,7 +8,7 @@ import (
 
 	"golang.org/x/tools/go/analysis/analysistest"
 
-	"github.com/zchee/go-analyzer/pkgerrors"
+	"github.com/peczenyj/go-analyzer/pkgerrors"
 )
 
 func TestAnalyzer(t *testing.T) {
