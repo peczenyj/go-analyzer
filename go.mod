@@ -1,10 +1,10 @@
 module github.com/zchee/go-analyzer
 
-go 1.24.6
+go 1.18
 
-require golang.org/x/tools v0.36.0
+require golang.org/x/tools v0.1.11-0.20220518213611-904e24e9fcf9
 
 require (
-	golang.org/x/mod v0.27.0 // indirect
-	golang.org/x/sync v0.16.0 // indirect
+	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
+	golang.org/x/sys v0.0.0-20211019181941-9d821ace8654 // indirect
 )
