@@ -10,6 +10,7 @@ import (
 	"go/format"
 	"go/token"
 	"go/types"
+	"log/slog"
 	"strconv"
 	"strings"
 
@@ -230,7 +231,14 @@ func reorderArgs(exprs []ast.Expr) []ast.Expr {
 	args := exprs[2:]
 
 	// adds %w verb to the end of msg
-	s := msg.(*ast.BasicLit).Value
+	elem, ok := msg.(*ast.BasicLit)
+	if !ok {
+		slog.Warn("unable to convert msg to *ast.BasicLit, skip", slog.Any("msg", msg))
+
+		return exprs
+	}
+
+	s := elem.Value
 	s = verb(unquote(s) + ": %w")
 	msg.(*ast.BasicLit).Value = strconv.Quote(s) // re-quoted
 
